@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hen & Chicken</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ <!-- Add the new buttons in the top-right corner -->
+<nav class="top-right-buttons">
+  <a href="home.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="aboutus.html">About Us</a>
+  
+</nav>
+
+  <!-- Hero Section with Image Slider -->
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active">
+        <img src="Hen-and-Chicken-AAH-013.jpg" alt="Hero Image 1">
+      </div>
+      <div class="slide">
+        <img src="Hen-and-Chicken-AAH-003.jpg" alt="Hero Image 2">
+      </div>
+      <div class="slide">
+        <img src="Hen-and-Chicken-AAH-025.jpg" alt="Hero Image 3">
+      </div>
+      <div class="slide">
+        <img src="Hen-and-Chicken-AAH-038.jpg" alt="Hero Image 4">
+      </div>
+      <div class="slide">
+        <img src="Hen-and-Chicken-AAH-040.jpg" alt="Hero Image 5">
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>Hen & Chicken</h1>
+      <p>Cocktails & Good Times</p>
+      <a href="#book" class="btn">Find a Table</a>
+    </div>
+    <div class="slider-controls">
+      <span class="prev"><i class="fas fa-chevron-left"></i></span>
+      <span class="next"><i class="fas fa-chevron-right"></i></span>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Brief Description Section -->
+ <!-- Brief Description Section -->
+ <section class="description">
+  <div class="description-content">
+    <div class="image-left" data-animate="slideInLeft">
+      <img src="Hen-and-Chicken-AAH-039.jpg" alt="Restaurant Ambiance">
+    </div>
+    <div class="text" data-animate="fadeIn">
+      <h2>Welcome to Hen & Chicken</h2>
+      <p>Hen & Chicken is a cozy and vibrant restaurant located in the heart of Horsham, West Sussex. Known for its warm ambiance and delicious cuisine, we offer a unique dining experience that combines classic flavors with modern twists. Whether you're here for our signature cocktails, mouth-watering specials, or lively events, we promise good times and great memories.</p>
+    </div>
+    <div class="image-right" data-animate="slideInRight">
+      <img src="Hen-and-Chicken-AAH-025.jpg" alt="Special Dish">
+    </div>
+  </div>
+</section>
+
+
+
+ 
+<!-- Video Section -->
+
+<section class="video-section" data-animate="fadeIn">
+  <h2>Our Restaurant Video</h2>
+  <div class="video-container">
+    <video id="restaurantVideo" poster="Hen-and-Chicken-AAH-013.jpg">
+      <source src="1111420-hd_1920_1080_30fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="play-button" id="playButton">
+      <div class="holographic-effect"></div>
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="video-controls">
+      <button id="playPauseBtn">
+        <i class="fas fa-play"></i>
+      </button>
+      <div class="volume-control">
+        <button id="muteBtn">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Upcoming Events Section -->
+<!-- Upcoming Events Section -->
+<section class="events" data-animate="fadeIn">
+  <h2>Upcoming Events</h2>
+  <div class="event-slider">
+    <div class="event-track">
+      <div class="event-card">
+        <img src="restaurant-event-free-psd-flyer-template-facebook-cover-instagram-post-62806.jpg" alt="Live Music Night">
+        <h3>Live Music Night</h3>
+        <p>Friday, 26 Dec</p>
+        <p>Join us for a night of live music and great vibes!</p>
+      </div>
+      <div class="event-card">
+        <img src="Restaurant-Event-Poster-Template-edit-online.png" alt="Cocktail Workshop">
+        <h3>Cocktail Workshop</h3>
+        <p>Saturday, 06 Sep</p>
+        <p>Learn to make your favorite cocktails with our expert mixologists.</p>
+      </div>
+      <div class="event-card">
+        <img src="181f1f51-eadd-489e-a9e9-8dd621e40aee-w300-p1.jpg" alt="Karaoke Night">
+        <h3>Karaoke Night</h3>
+        <p>Tuesday, 30 Dec</p>
+        <p>Sing your heart out and enjoy a fun-filled evening!</p>
+      </div>
+      <div class="event-card">
+        <img src="restaurant-event-free-psd-flyer-template-facebook-cover-instagram-post-62806.jpg" alt="Wine Tasting">
+        <h3>Wine Tasting</h3>
+        <p>Wednesday, 17 Dec</p>
+        <p>Explore a selection of fine wines with our sommelier.</p>
+      </div>
+      <div class="event-card">
+        <img src="181f1f51-eadd-489e-a9e9-8dd621e40aee-w300-p1.jpg" alt="Chef's Table">
+        <h3>Chef's Table</h3>
+        <p>Thursday, 20 Dec</p>
+        <p>Experience a gourmet meal prepared by our head chef.</p>
+      </div>
+      <!-- Duplicate the first card for smooth looping -->
+      <div class="event-card">
+        <img src="restaurant-event-free-psd-flyer-template-facebook-cover-instagram-post-62806.jpg" alt="Live Music Night">
+        <h3>Live Music Night</h3>
+        <p>Friday, 26 Dec</p>
+        <p>Join us for a night of live music and great vibes!</p>
+      </div>
+      <div class="event-card">
+        <img src="Restaurant-Event-Poster-Template-edit-online.png" alt="Cocktail Workshop">
+        <h3>Cocktail Workshop</h3>
+        <p>Saturday, 06 Sep</p>
+        <p>Learn to make your favorite cocktails with our expert mixologists.</p>
+      </div>
+      <div class="event-card">
+        <img src="181f1f51-eadd-489e-a9e9-8dd621e40aee-w300-p1.jpg" alt="Karaoke Night">
+        <h3>Karaoke Night</h3>
+        <p>Tuesday, 30 Dec</p>
+        <p>Sing your heart out and enjoy a fun-filled evening!</p>
+      </div>
+      <div class="event-card">
+        <img src="food-service-flyer-design-template_1305553-92.avif" alt="Wine Tasting">
+        <h3>Wine Tasting</h3>
+        <p>Wednesday, 17 Dec</p>
+        <p>Explore a selection of fine wines with our sommelier.</p>
+      </div>
+      <div class="event-card">
+        <img src="restaurant-event-free-psd-flyer-template-facebook-cover-instagram-post-62806.jpg" alt="Chef's Table">
+        <h3>Chef's Table</h3>
+        <p>Thursday, 20 Dec</p>
+        <p>Experience a gourmet meal prepared by our head chef.</p>
+      </div>
+      <div class="event-card">
+        <img src="food-service-flyer-design-template_1305553-92.avif" alt="Live Music Night">
+        <h3>Live Music Night</h3>
+        <p>Friday, 26 Dec</p>
+        <p>Join us for a night of live music and great vibes!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Our Special Food Section -->
+  <!-- Our Special Food Section -->
+  <section class="specials" data-animate="fadeIn">
+    <h2>Our Specials</h2>
+    <div class="food-grid">
+    <div class="food-card">
+      <img src="Hen-and-Chicken-AAH-034.jpg" alt=" Stir-fry dish">
+      <h3>Stir-fry dish</h3>
+      <p> sliced meat coated in a dark, rich sauce.</p>
+      <p class="price">$37</p>
+    </div>
+    <div class="food-card">
+      <img src="Hen-and-Chicken-AAH-017.jpg" alt="Chicken Patties">
+      <h3>Chicken Patties</h3>
+      <p>Pan-Fried Patties with Salad and Sauces.</p>
+      <p class="price">$37</p>
+    </div>
+    <div class="food-card">
+      <img src="Hen-and-Chicken-AAH-005.jpg" alt="Chicken Patties">
+      <h3>Chicken Fried</h3>
+      <p>Crispy Fried on Greens with the chicken</p>
+      <p class="price">$35</p>
+    </div>
+    <div class="food-card">
+      <img src="Hen-and-Chicken-AAH-025.jpg" alt="Curry,Rice">
+      <h3>Curry, Rice, and Naan Combo</h3>
+      <p> Combination meal with Indian cuisine elements.</p>
+      <p class="price">$32</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Photo Gallery Section -->
+ <!-- Photo Gallery Section with Multiple Images and Smooth Sliding Animation -->
+ <section class="gallery" data-animate="fadeIn">
+  <h2>Photo Gallery</h2>
+  <div class="gallery-slider">
+    <div class="gallery-track">
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-039.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-032.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-046.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-034.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-039.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-slide">
+        <img src="Hen-and-Chicken-AAH-039.jpg" alt="Gallery Image 6">
+      </div>
+    </div>
+  </div>
+  <div class="gallery-controls">
+    <span class="gallery-prev"><i class="fas fa-chevron-left"></i></span>
+    <span class="gallery-next"><i class="fas fa-chevron-right"></i></span>
+  </div>
+</section>
+
+  <!-- Visit Us Section -->
+  <!-- Visit Us Section -->
+  <section class="visit-us" data-animate="fadeIn">
+    <h2>Visit Us</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.9252396917923!2d-0.34956099999999996!3d51.0360015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875ea94ebdbd0a1%3A0x24f12a745a7b9275!2sHen%20%26%20Chicken!5e0!3m2!1sen!2sin!4v1742479023653!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <a href="https://g.co/kgs/TMxizkQ" target="_blank" class="btn">Get Directions</a>
+  </section>
+<!-- Book a Table Section -->
+<section id="book" class="book-table" data-animate="fadeIn">
+  <h2>Book a Table</h2>
+  <form>
+    <input type="number" placeholder="Number of Persons" min="1" required>
+    <input type="date" required>
+    <input type="time" required>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer data-animate="fadeIn">
+    <div class="logo">Hen & Chicken</div>
+    <div class="address">Horsham, West Sussex, England</div>
+    <div class="contact">
+      <p>T. +44 123 456789</p>
+      <p>M. info@henandchicken.com</p>
+    </div>
+    <div class="social-media">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="copyright">© 2024 Hen & Chicken, ALL RIGHTS RESERVED</div>
+  </footer>
+
+  <script src="test.js"></script>
+</body>
+</html>
